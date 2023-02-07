@@ -1,0 +1,87 @@
+.resident{
+    border-radius: 0.8em;
+    background-color: #062226;
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform .7s;
+}
+.resident:hover{
+    background-color: #062230;
+    transform: scale(1.01);
+    box-shadow: 0 5px 30px 0 #031220;
+}
+.resident_header{
+    position: relative;
+}
+.resident_container-status{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    position: absolute;
+    top: 1em;
+    width: 7em;
+    background-color: #062226;
+    padding: 0.4em 0 0.2em 0.4em;
+    border-radius: 0 0.4em 0.4em 0;
+}
+.resident_circle{
+    display: block;
+    width: 12px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #aaa;
+}
+.unknown{
+    background-color: #aaa;
+    animation: unknown 2s infinite;
+}
+@keyframes unknown{
+    50% {
+        border: 1px solid;
+    }
+}
+.Alive{
+    background-color: rgb(6, 161, 61);
+    animation: alive 2s infinite;
+}
+@keyframes alive{
+    50% {
+        border: 1px solid;
+    }
+}
+.Dead{
+    background-color: rgb(219, 7 , 7);
+    animation: dead 2s infinite;
+}
+@keyframes dead{
+    50% {
+        border: 1px solid;
+    }
+}
+.resident_body{
+    padding: 0.5em 1.3em 1em;
+}
+.resident_name{
+    text-align: center;
+    margin-bottom: 0.3em;
+    font-size: 1.3rem;
+}
+.resident_hr{
+    border: none;
+    border-top: 1px solid #aaa;
+}
+.resident_list{
+    margin-top: .5em;
+    display: grid;
+    gap: 0.3em;
+}
+.resident_item{
+    display: flex;
+    flex-direction: column;
+}
+.resident_label{
+    font-size: 0.9rem;
+    position: relative;
+    left: 1em;
+    color: #aaa;
+}
