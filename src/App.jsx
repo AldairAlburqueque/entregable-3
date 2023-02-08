@@ -84,7 +84,7 @@ function App() {
       
       {
         loading ?
-        <img className='img_load' src={imgLoa} alt="" />
+        <img className='img_load' src='https://play-lh.googleusercontent.com/fXQVXTma1ENwAFjsxJ4IT6GntBr3RxWP3HMSLbNdvycl-0tscOQEeJIEAmehcNOt5hCp=w600-h300-pc0xffffff-pd' alt="" />
         :
         hasError ?
         <>
