@@ -14,8 +14,6 @@ function App() {
   const [listLocation, setListLocation] = useState()
   const [isShow, setIsShow] = useState(true)
   const [loading, setLoading] = useState(false)
-  const imagen = 'public/rick.jpg'
-  const img = 'public/rick-error.jpg'
   const imgLoa = 'public/loa.webp'
 
   useEffect(() => {
@@ -55,7 +53,7 @@ function App() {
   return (
     <div className="app" onClick={() => setIsShow(false)}>
       <>
-      <img className='img_baner' src={imagen} alt="" />
+      <img className='img_baner' src='https://static.posters.cz/image/hp/66133.jpg' alt="" />
       </>
       
       <form className='form' onSubmit={handleSubmit}>
@@ -91,7 +89,7 @@ function App() {
         hasError ?
         <>
           <h2 className='app_error'>❌ Hey! you must provide an id from 1 to 126 🥺</h2>
-          <img className='img_error' src={img} alt="" />
+          <img className='img_error' src='https://images.squarespace-cdn.com/content/v1/5a553ed8c027d8cb5b2b6aeb/1519712033920-XTR6HWA3IQLCRTHLB46I/404error+message.jpg?format=1000w' alt="" />
         </>
           
         
